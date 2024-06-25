@@ -1,0 +1,69 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: 
+    linear-gradient(rgba(53, 44, 114, 0.203)),
+    linear-gradient(rgba(43, 38, 80, 0.313)), 
+    url('../../assets/bg.avif');  
+    /* background: url('../../assests/bg.jpg'); */
+    opacity: 0.7;
+    background-image: url('../../assets/bg.avif');
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(81, 33, 99, 0.653), rgba(123, 83, 148, 0.596));
+    z-index: 1; /* Ensures overlay is on top */
+}
+
+.hero-text{
+    text-align: center;
+    max-width: 800px;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero-text h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.hero-text p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+}
+
+/* --------------media query------------------ */
+
+@media (max-width: 850px){
+    .hero-text h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 650px){
+    .hero-text h1{
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+    }
+    .hero-text p{
+        font-size: 14px;
+        margin: 15px auto 30px;
+    }
+}
