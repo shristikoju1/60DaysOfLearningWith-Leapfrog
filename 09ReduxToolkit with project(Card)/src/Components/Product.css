@@ -1,0 +1,7 @@
+/* Create a CSS file or add this to your existing CSS */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
