@@ -1,0 +1,237 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../../assets/bg-hero.jpg');
+  opacity: 0.9;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 41, 83, 0.8), rgba(0, 45, 91, 0.8));
+    z-index: 1;
+  }
+
+  .App.fade-background & {
+    opacity: 0.7;
+
+    &::before {
+      background: linear-gradient(rgba(0, 41, 83, 0.8), rgba(0, 45, 91, 0.8));
+    }
+  }
+
+  .search-bar {
+    width: 640px;
+    height: 56px;
+    border: 1px solid black;
+    margin: 24px auto;
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &.hidden {
+      display: none;
+    }
+
+    .search-input {
+      flex: 1;
+      height: 100%;
+      border: none;
+      outline: none;
+      padding: 0 20px 0 50px;
+      font-size: 16px;
+      background: url('../../assets/gray-search-icon.svg') no-repeat;
+      background-size: 20px 20px;
+      background-position: 15px center;
+
+      &::placeholder {
+        color: #888;
+      }
+    }
+
+    .close {
+      height: 20px;
+      width: 20px;
+      border-radius: 1000px;
+      background-color: #f5f5f5;
+      cursor: pointer;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    max-width: 800px;
+    color: #fff;
+    z-index: 1;
+
+    h1 {
+      width: 1120px;
+      font-family: "Inter", sans-serif;
+      font-size: 60px;
+      font-weight: 600;
+      line-height: 72px;
+      text-align: center;
+      padding: 50px 0 24px 0;
+    }
+
+    p {
+      width: 768px;
+      font-family: "Inter", sans-serif;
+      line-height: 1.4;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+  }
+
+  .btn {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    width: 210px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 229, 0, 1);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    padding: 16px 28px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+      width: 16px;
+      height: 16px;
+      top: 22px;
+      left: 162px;
+      gap: 0px;
+      opacity: 0px;
+    }
+  }
+
+  /* --------------media query------------------ */
+
+  @media (max-width: 1200px) {
+    .hero-text {
+      h1 {
+        font-size: 50px;
+        line-height: 60px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+      }
+    }
+
+    .btn {
+      width: 180px;
+      height: 50px;
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .hero-text {
+      h1 {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+  }
+
+  @media (max-width: 650px) {
+    .hero-text {
+      h1 {
+        font-size: 30px;
+        line-height: 36px;
+        max-width: 500px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        width: 400px;
+      }
+    }
+
+    .btn {
+      width: 160px;
+      height: 45px;
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-text {
+      h1 {
+        font-size: 24px;
+        line-height: 30px;
+        width: 400px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 1.4;
+        margin-bottom: 24px;
+        width: 250px;
+      }
+    }
+
+    .btn {
+      width: 140px;
+      height: 40px;
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+
+    .search-bar {
+      width: 100%;
+      max-width: 320px;
+
+      .search-input {
+        padding: 0 20px;
+        font-size: 14px;
+      }
+
+      .close {
+        top: -8px;
+        right: -8px;
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+}
