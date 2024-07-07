@@ -1,0 +1,158 @@
+.footer {
+    background-color: #f7f7f7;
+    padding: 40px 0 0;
+}
+
+.footer-first {
+    background-color: #f7f7f7;
+}
+
+.footer-first-content {
+    width: 1140px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 70px auto 30px;
+}
+
+.first {
+    width: 285px;
+    padding: 0 12px;
+    color: #212529;
+}
+
+.first h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #442f90;
+    margin: 0 0 24px;
+}
+
+.first ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.first ul a {
+    margin: 0 0 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.first ul a:hover {
+    color: #015ABD;
+}
+
+.first-one {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    gap: 10px;
+    
+}
+
+.one-logo img {
+    width: 250px;
+    height: auto;
+}
+
+.first-one p {
+    padding: 5px 0;
+    color: #333;
+}
+
+.first-one span {
+    font-weight: bold;
+}
+
+.payment-partner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.connect-ips img,
+.esewa img {
+    height: auto;
+    width: 100px;
+}
+
+.footer-second{
+    background: linear-gradient(to bottom right, #442f90, #015ABD);
+
+}
+
+.footer-second-content {
+    
+    width: 1140px;
+    height: auto;
+    padding: 16px 20px;
+    font-size: 16px;
+    color: #f7f7f7;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.second-upper {
+    /* width: 1140px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.upper-one {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-media {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.social-media img {
+    height: 24px;
+    width: 24px;
+}
+
+.social-media:hover {
+    background-color: #e0e0e0;
+}
+
+.upper-two {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.upper-two a {
+    color: #f7f7f7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.upper-two a:hover {
+    color: #ffcc00;
+}
+
+.second-lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+}

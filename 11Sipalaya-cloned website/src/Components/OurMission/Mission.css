@@ -1,0 +1,43 @@
+.mission{
+    margin: 50px auto 110px;
+}
+
+.mission-title {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  
+  .mission-title h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #3043DB;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .mission-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .image {
+    border-radius: 23px;
+    border: 4px solid #3043DB;
+    box-sizing: border-box; 
+    margin: 10px; 
+  }
+  
+  .image img {
+    height: 150px;
+    width: 150px;
+    display: block; 
+    border-radius: 20px;
+  }
+  
