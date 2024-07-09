@@ -1,0 +1,187 @@
+.courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .courses-title {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .courses-title h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #3043DB;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .courses-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+  
+  .courses-cards-box {
+    width: 270px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(177, 174, 174, 0.571);
+  }
+  
+  .courses-cards-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .box-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    transition: filter 0.3s ease; 
+  }
+  
+  .box-image img:hover {
+    filter: brightness(0.65); 
+  }
+  
+  .courses-package {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(177, 174, 174, 0.571);
+  }
+  
+  .rating .material-icons-round {
+    font-size: 18px;
+    color: #ed9700;
+  }
+  
+  .package a {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .by {
+    display: flex;
+  }
+  
+  .by span {
+    color: #757c8e;
+  }
+  
+  .by p {
+    font-size: 14px;
+    color: #212327;
+  }
+  
+  .courses-package > div span {
+    font-size: 14px;
+    margin-right: 4px;
+  }
+  
+  .courses-package > div a:hover {
+    color: #573ad9;
+  }
+  
+  .courses-package .by p:hover {
+    color: #573ad9;
+  }
+  
+  .courses-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #212327;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .courses-price-first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .price .previous {
+    font-family: "Poppins", sans-serif;
+    color: #9E9E9F;
+    font-size: 14.5px;
+    text-decoration: line-through;
+  }
+  
+  .price .present {
+    font-family: "Poppins", sans-serif;
+    color: #F44337;
+    font-size: 16px;
+  }
+  
+  .booking {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .loader {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #e2e2f8;
+    border-top: 3px solid #3043DB;
+    border-radius: 50%;
+  }
+  
+  .booked span {
+    font-size: 14px;
+  }
+  
+  .booked p {
+    font-size: 14px;
+  }
+  
+  .courses-price-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .courses-price-second button {
+    font-family: "Poppins", sans-serif;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border: 1px solid #3e64de;
+    color: #3e64de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+  }
+  
+  .courses-price-second button:hover {
+    background-color: #3e64de;
+    color: white;
+  }
+  

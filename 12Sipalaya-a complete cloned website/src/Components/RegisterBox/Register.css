@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    padding: 20px; 
+}
+
+.register-box {
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #D3D0FF 0%, #442F90 100%);
+    border-radius: 10px;
+    padding: 20px 40px; 
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    height: 236px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box; /* Ensures padding is included in total width */
+}
+
+.register-box-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    flex: 1;
+    color: white;
+    padding: 20px; 
+}
+
+.register-box-left h5 {
+    font-family: "Sora", sans-serif;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.register-box-left h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 23px;
+}
+
+.register-box-right {
+    display: flex;
+    align-items: center;
+}
+
+.register-box-right button {
+    background-color: #442F90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-box-right button:hover {
+    background-color: #040110;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .register {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 10px;
+    }
+
+    .register-box {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .register-box-left {
+        padding: 10px;
+        text-align: center; /* Center-align text for smaller screens */
+    }
+
+    .register-box-left h5 {
+        font-size: 18px;
+    }
+
+    .register-box-left h3 {
+        font-size: 20px;
+    }
+
+    .register-box-right {
+        justify-content: center; /* Center-align button on smaller screens */
+    }
+
+    .register-box-right button {
+        width: 100%; /* Make button full width */
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-box-left h5 {
+        font-size: 16px;
+    }
+
+    .register-box-left h3 {
+        font-size: 18px;
+    }
+
+    .register-box-right button {
+        padding: 10px 20px;
+    }
+}

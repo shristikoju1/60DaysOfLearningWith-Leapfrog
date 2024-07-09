@@ -1,0 +1,184 @@
+.testimonials-title {
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.testimonials-title h2 {
+    font-family: "Sora", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #442f90;
+    margin: 0 0 8px;
+
+}
+
+.testimonials-title p {
+    text-align: center;
+    width: 700px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6b7385;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.testimonials-content {
+    margin: 80px auto;
+    padding: 0 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    padding: 0 20px;
+}
+
+.next-btn, .back-btn {
+    background-color: #442f90;
+    padding: 15px;
+    width: 50px;
+    height: 50px; /* Ensure height and width are the same for perfect circle */
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-btn:hover, .back-btn:hover {
+    background-color: #3043DB; /* Background color on hover */
+}
+
+.next-btn .material-icons-round, .back-btn .material-icons-round {
+    color: white;
+    font-size: 24px; 
+}
+
+.slider {
+    overflow: hidden;
+    flex-grow: 1;
+    padding: 0 15px; /* Add padding to ensure space on both sides */
+}
+
+.slider ul {
+    display: flex;
+    width: calc(4 * 320px); /* Adjust to fit three items at 345px each */
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.slider ul li {
+    list-style: none;
+    width: 320px; /* Adjust width to match the specified 345px */
+    padding: 5px;
+}
+
+.slide {
+    background: rgb(120 125 197 / 10%);
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    padding: 30px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+    margin: 0 10px; /* Add margin to space out the slides */
+}
+
+.slide p {
+    color: #212529;
+}
+
+.slide img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 4px solid #442f9030;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.user-info h3 {
+    font-family: "Sora", sans-serif;
+    color: #442f90;
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.user-info span{
+    color: #212529;
+}
+
+/* -------------------------media query------------------------------- */
+@media (max-width: 800px) {
+    .testimonials-content {
+        padding: 0 40px;
+    }
+
+    .testimonials-title h2{
+        font-size: 36px;
+    }
+
+    .testimonials-title p{
+        width: 80%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .next-btn, .back-btn {
+        padding: 10px;
+        width: 35px;
+        height: 35px; /* Ensure height and width are the same for perfect circle */
+    }
+    .slider ul li {
+        padding: 10px;
+    }
+    .slide {
+        padding: 10px;
+    }
+    .slide img {
+        width: 50px;
+        height: 50px; /* Ensure height and width are the same for perfect circle */
+        border: 3px solid #AB92BF;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .testimonials-title h2{
+        font-size: 30px;
+    }
+
+    .testimonials-title p{
+        width: 80%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .slide{
+        width: 70%;
+    }
+
+    .user-info {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .user-info h3 {
+        font-size: 16px;
+    }
+    .slider p {
+        font-size: 12px;
+    }
+}

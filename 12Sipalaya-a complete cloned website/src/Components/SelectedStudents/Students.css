@@ -1,0 +1,64 @@
+.students-title {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .students-title h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #3043DB;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .students {
+    padding: 20px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    background-color: #442f90; /* Background color for the circular background */
+    border-radius: 50%; /* Makes the background circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  
+  .arrow:hover {
+    background-color: #3043DB; 
+  }
+  
+  .arrow .material-icons-round {
+    color: white;
+    font-size: 18px; 
+  }
+  
+  .students-images {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .student-image {
+    width: 212px;
+    height: 212px;
+    object-fit: cover;
+    margin: 0 5px;
+    transition: filter 0.3s ease; 
+  }
+
+  .student-image:hover{
+    filter: brightness(0.65); 
+  }
+  
